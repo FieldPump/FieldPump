@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FieldPump - Retro Pixel MMORPG</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game-canvas"></canvas>
+    <div id="ui-overlay">
+      <div id="login-panel" class="panel">
+        <h2>Welcome to FieldPump</h2>
+        <div class="login-options">
+          <button id="traditional-login">Login with Username</button>
+          <button id="wallet-login">Connect Wallet</button>
+        </div>
+        <div id="login-form" class="hidden">
+          <input type="text" id="username" placeholder="Username">
+          <input type="password" id="password" placeholder="Password">
+          <button id="login-submit">Login</button>
+          <p>New player? <a href="#" id="register-link">Register</a></p>
+        </div>
+      </div>
+      <div id="game-ui" class="hidden">
+        <div id="player-info">
+          <div id="player-avatar"></div>
+          <div id="player-stats">
+            <p id="player-name">Player</p>
+            <p id="player-level">Level 1</p>
+            <div id="health-bar">
+              <div id="health-fill"></div>
+            </div>
+          </div>
+        </div>
+        <div id="inventory-button" class="ui-button">Inventory</div>
+        <div id="chat-button" class="ui-button">Chat</div>
+      </div>
+      <div id="inventory-panel" class="panel hidden">
+        <h3>Inventory</h3>
+        <div id="inventory-slots"></div>
+        <div id="nft-items">
+          <h4>NFT Items</h4>
+          <div id="nft-slots"></div>
+        </div>
+        <button id="close-inventory" class="close-button">Close</button>
+      </div>
+      <div id="chat-panel" class="panel hidden">
+        <div id="chat-messages"></div>
+        <div id="chat-input-area">
+          <input type="text" id="chat-input" placeholder="Type your message...">
+          <button id="send-message">Send</button>
+        </div>
+        <button id="close-chat" class="close-button">Close</button>
+      </div>
+    </div>
+  </div>
+  <script src="./dist/bundle.js"></script>
+</body>
+</html>
