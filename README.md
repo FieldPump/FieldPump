@@ -68,7 +68,7 @@ FieldPump emerges as a retro pixel-style Web3 Massively Multiplayer Online Role-
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/fieldpump.git
+git clone https://github.com/FieldPump/FieldPump.git
 
 # Install dependencies
 npm install
